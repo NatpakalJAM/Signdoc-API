@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  signdoc_api:
+    container_name: signdoc_api
+    image: <docker_image_url>
+    ports:
+      - "3020:3000"
+    volumes:
+      - ./logs:/app/logs
+      - ./db_dump:/app/db/dump
+    environment:
+      - Environment=development
+      - DBtype=sqlite
+      - Instance=staging
+      - TZ=Asia/Bangkok
+
+networks:
+  default:
+    external:
+      name: ex_docker_network

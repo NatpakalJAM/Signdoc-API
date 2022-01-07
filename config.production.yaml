@@ -1,0 +1,27 @@
+app-url: http://127.0.0.1
+prefix: signdoc_api
+
+auth:
+  url: http://127.0.0.1
+  authorization: authorization_code
+
+gcp:
+  google_application_credentials: google_application_credentials.json
+  project_ID: docusign
+  bucket_name: docusign
+  upload_path: docusign
+
+db:
+  host: 127.0.0.1
+  port: 3307
+  database: docsign
+  username: root
+  password: root
+
+sqlite:
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  db: 1
+  password:
